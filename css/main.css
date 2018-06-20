@@ -535,7 +535,7 @@ ul.contact-list li a:focus, ul.contact-list li a:hover {
 }
 
 #fh-banner {
-  background-image: url(../images/thumbnail-fh.png);
+  background-image: url(../images/fh-feature-img-md.png);
   background-size: cover;
 }
 
@@ -606,7 +606,7 @@ h5.duration {
 }
 
 .project1-card {
-  background-image: url(../images/thumbnail-fh.png);
+  background-image: url(../images/fh-feature-img-md.png);
   background-size: cover;
 }
 
