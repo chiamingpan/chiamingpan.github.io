@@ -11,12 +11,13 @@
 /* GENERAL */
 
 .main-container {
-  padding: 25px 5%;
+  padding: 25px 8%;
   margin: 0 auto;
   max-width: 1200px;
   /*    border: 1px solid grey;*/
   overflow: hidden;
 }
+
 .flex-container {
   padding: 0;
   margin: 0;
@@ -44,23 +45,27 @@ button {
 
 h1 {
   font-size: 2.5em;
-  letter-spacing: .05em;
+  letter-spacing: .08em;
+  font-weight: 700;
   /* 32px/16=2em */
 }
 
 h2 {
   font-size: 1.6em;
+  line-height:1.4em;
   /* 28px/16=1.75em */
 }
 
 h3 {
+
   font-size: 1.5em;
+  font-weight: 700;
   /* 24px/16=1.5em */
 }
 
 h4 {
   font-size: 1.25em;
-  line-height: 1.6em;
+  line-height: 1.4em;
   letter-spacing: .08em;
   /* 20px/16=1.25em */
 }
@@ -84,19 +89,35 @@ p {
   margin: 10px 0 15px 0;
   /* 16px/16=1em */
 }
+a{
+  text-decoration:none;
+    color:#333;
+}
+a:hover{
+  text-decoration:none;
 
+}
+.italic {
+    font-style: italic;
+}
 /* Nav */
+#project-page .main-container{
+    padding: 50px 8%;
+}
 #topnav.main-container{
-  padding: 0 5%;
+  padding: 20px 8%;
   max-width: 1200px;
   margin: 0 auto;
   font-family: 'Raleway', sans-serif;
   letter-spacing: .1em;
   background-color: #F5F6F5;
 }
-#project-page #topnav{
+#project-page #topnav.main-container{
     background-color: #FFFFFF;
+    padding: 0 8%;
 }
+
+
 #front-page header{
   background-color: #F5F6F5;
   color: #A8B1B0;
@@ -154,18 +175,22 @@ p {
     background-color: #FFFFFF;
     border-bottom: 1px solid #A8B1B0;
 }
-#project-page .site-nav ul li{
-    border-bottom: 1px solid #A8B1B0;
+
+
+.nav-contact-list{
+  display: none;
 }
-
-
 
 .site-nav-icon{
   display: block;
 }
 
 .site-nav--open {
-  height:auto;
+  padding-top:3em;
+  height:100vh;
+}
+.nav-contact-list{
+  display: block;
 }
 
 .site-nav ul {
@@ -191,7 +216,7 @@ p {
 .menu-toggle {
   padding: 0 1em;
   position: absolute;
-  top: 1.8em;
+  top: 3.2em;
   right: 1em;
   cursor: pointer;
 }
@@ -201,6 +226,9 @@ p {
   right:3em;
   top: -1.35em;
   font-weight: 700;
+}
+#project-page .menu-toggle{
+  top: 1.6em;
 }
 .hamburger, .hamburger::before, .hamburger::after {
   content: '';
@@ -235,18 +263,23 @@ p {
   display:block;
 }
 
-.site-nav ul li{
+.site-nav ul>li{
   font-size: 100%;
   transition: font-size .5s;
-  border-top: 1px solid #fff;
+
 }
 
-.site-nav ul li:last-child{
-    border-bottom: 1px solid #fff;
-}
+
 .site-nav ul li:hover,
 .site-nav ul li:focus{
   font-size: 120%;
+}
+.nav-contact-list>li{
+  display: inline-block;
+}
+
+.nav-contact-list>li>a{
+  padding: 1.6em 1em;
 }
 .contact-list svg:not(:root).svg-inline--fa,
 .contact-list-grey svg:not(:root).svg-inline--fa,
@@ -256,10 +289,11 @@ p {
   font-size: 1.65em;
 }
 .site-nav svg:not(:root).svg-inline--fa{
-  margin:0 auto;
+  margin:0 auto 10px auto;
 }
 
 @media (min-width: 640px) {
+
   .menu-toggle {
     display: none;
   }
@@ -275,13 +309,16 @@ p {
     opacity: 1;
     padding: 0 0 0 4em;
     font-size: 100%;
-    top: .25em;
+    top: .5em;
+  }
+  .nav-contact-list{
+    display: none;
   }
   #project-page .site-nav{
     border-bottom: none;
   }
 
-  #project-page .site-nav ul li{
+  #project-page .site-nav>ul>li{
     border-bottom: none;
     border-top:none;
     }
@@ -309,8 +346,8 @@ p {
   .site-nav li:last-child{
     display: none;
   }
-  .site-nav ul li.active a,
-  #project-page .site-nav ul li.active a {
+  .site-nav ul>li.active a,
+  #project-page .site-nav ul>li.active a {
     color:#05728c;
   }
 }
@@ -318,11 +355,11 @@ p {
 /* End Nav*/
 .masterhead{
   clear:both;
-  height:500px;
+  height:580px;
   background-color: #F5F6F5;
 }
 .masterhead .main-container{
-  padding: 100px 5%;
+  padding: 180px 8%;
   text-align: center;
 }
 
@@ -350,9 +387,7 @@ ul.contact-list-grey li a:hover {
   color: #05728c;
 }
 
-#project1.main-container,
-#project2.main-container,
-#project3.main-container {
+#project1.main-container{
   margin-top: 30px;
 }
 
@@ -367,8 +402,7 @@ section.work {
 
 .project-brief {
   border: .5px solid lightgrey;
-  padding-top:10px;
-  padding-bottom: 10px;
+  padding:10px 45px;
   position: relative;
 }
 
@@ -410,8 +444,8 @@ button.readCase {
   transition: .6s;
   font-weight: 700;
   position:absolute;
-  bottom:20px;
-  left: 20px;
+  bottom:30px;
+  left: 45px;
 }
 
 button.readCase a {
@@ -516,9 +550,10 @@ ul.contact-list li a:focus, ul.contact-list li a:hover {
   overflow: hidden;
 }
 .project-masterhead .main-container{
-  padding: 25px 5%;
+  padding: 25px 8%;
   text-align: center;
 }
+
 
 .project-heading {
   margin-top: 30px;
@@ -575,9 +610,20 @@ h5.duration {
   color: #2AA8A1;
 }
 
+a.external-link{
+  text-decoration:underline;
+  color:#05728c;
+}
 
-
-
+.side-note{
+  position: relative;
+  padding-left: 30px;
+}
+.number {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
 .others-headline {
   text-align: center;
 }
@@ -627,7 +673,8 @@ ul.research-list,
 ul.ideation-list {
   padding-left: 25px;
   font-size: 1.2em;
-  line-height: 1.8em
+  line-height: 1.8em;
+  letter-spacing:.05em;
 }
 
 
@@ -685,7 +732,7 @@ section#about-page .main-container {
 }
 
 .bio {
-  padding: 80px 0;
+  padding: 50px 30px;
   text-align: left;
 }
 
@@ -708,13 +755,14 @@ section#about-page .main-container {
 }
 /*About Us Media Query*/
 
-/* Laptop Device*/
-
-@media (max-width:1024px) {
-.bio-photo img {
-    width: 50%;
+@media (max-width:1000px) {
+  h5.project-role {
+    display:none;
   }
 }
+/* Laptop Device*/
+
+
 @media (max-width:956px) and (min-width:769px){
 
 .bio{
@@ -731,7 +779,8 @@ section#about-page .main-container {
     margin: 0 auto;
     height: auto;
   }
-
+  h5.project-role {
+    disaply:none;}
 
 }
 /* Tablet Device*/
@@ -748,7 +797,7 @@ section#about-page .main-container {
   }
   .profile-small-device{
     display:block;
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
     height: auto;
 
@@ -771,6 +820,10 @@ section#about-page .main-container {
   background-image: url(../images/st360-feature-img-md.png);
   background-size: cover;
 }
+button.readCase{
+  bottom:40px;}
+
+
 }
 /* Mobile L Device*/
 
@@ -798,9 +851,16 @@ section#about-page .main-container {
     background-size: cover;
   }
   button.readCase{
-    left: 15px;}
-}
+    left: 15px;
+    bottom:30px;
+  }
 
+.project-brief {
+  border: .5px solid lightgrey;
+  padding:10px 15px;
+  position: relative;
+}
+}
 /* Mobile M Device*/
 
 @media (max-width:375px) {}
