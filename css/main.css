@@ -438,6 +438,11 @@ h5.project-role{
   background-size: cover;
 }
 
+#project4 .project-preview{
+  background-color: #9fa5a7;
+  background-image: url(../images/ddl-feature-img-sm.png);
+  background-size: cover;
+}
 button.readCase {
   margin-top: 10px;
   border: none;
@@ -585,7 +590,11 @@ ul.contact-list li a:focus, ul.contact-list li a:hover {
   background-size: cover;
   margin: 0 auto;
 }
-
+#ddl-banner{
+  background-image: url(../images/ddl-feature-img-lg.png);
+  background-size: cover;
+  margin: 0 auto;
+}
 .project-process {
   margin-top: 20px;
 }
