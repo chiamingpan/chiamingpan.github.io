@@ -388,7 +388,7 @@ ul.contact-list-grey li a:hover {
   color: #05728c;
 }
 
-#project1.main-container{
+#project0.main-container{
   margin-top: 30px;
 }
 
@@ -417,6 +417,12 @@ h5.project-role{
 }
 .project-preview {
   padding-right: 0;
+}
+#project0 .project-preview {
+  background-color: #e58d6d;
+  background-image: url(../images/ih-feature-img-lg.png);
+  background-size: cover;
+  margin: 0 auto;
 }
 
 #project1 .project-preview {
@@ -560,7 +566,9 @@ ul.contact-list li a:focus, ul.contact-list li a:hover {
   text-align: center;
 }
 
-
+#overview p{
+  margin-top: 0;
+}
 .project-heading {
   margin-top: 30px;
 }
@@ -575,6 +583,10 @@ ul.contact-list li a:focus, ul.contact-list li a:hover {
   margin-top: 10px;
 }
 
+#ih-banner{
+  background-image: url(../images/ih-feature-img-lg.png);
+  background-size: cover;
+}
 #fh-banner {
   background-image: url(../images/fh-feature-img-lg.png);
   background-size: cover;
@@ -656,11 +668,15 @@ a.external-link{
   color: #05728c;
 }
 
-.project1-card, .project2-card, .project3-card {
+.project0-card, .project1-card, .project2-card, .project3-card {
   height: 200px;
   display: block;
 }
 
+.project0-card{
+  background-image: url(../images/ih-feature-img-lg.png);
+  background-size: cover;
+}
 .project1-card {
   background-image: url(../images/fh-feature-img-lg.png);
   background-size: cover;
@@ -687,6 +703,15 @@ ul.ideation-list {
   letter-spacing:.05em;
 }
 
+.project-scope,.project-methology{
+  padding:5px;
+  height: auto;
+  margin: 10px auto;
+}
+
+.project-scope{
+  width:100%
+}
 
 .project-highlight img,
 img.demo-img,
@@ -822,6 +847,12 @@ section#about-page .main-container {
     display:none;
   }
 
+  #project0 .project-preview {
+    background-color: #e58d6d;
+    background-image: url(../images/ih-feature-img-lg.png);
+    background-size: cover;
+    margin: 0 auto;
+  }
 #project1 .project-preview {
   background-color: #e58d6d;
   background-image: url(../images/fh-feature-img-md.png);
