@@ -98,8 +98,14 @@ a:hover{
   text-decoration:none;
 
 }
-.italic {
-    font-style: italic;
+
+p.italic{
+  padding-top: 1em;
+  font-size: 1.35em;
+  font-style: italic;
+  font-weight: bold;
+  color: grey;
+
 }
 /* Nav */
 #project-page .main-container{
@@ -407,8 +413,16 @@ section.work {
   position: relative;
 }
 
+.project-brief a:hover{
+  color: #05728c;
+}
+
+
 .project-brief h5, .project-brief h2, .project-brief h5.project-role {
   font-family: 'Raleway', sans-serif;
+}
+.project-brief h2{
+  font-weight: bold;
 }
 
 h5.project-role{
@@ -418,34 +432,35 @@ h5.project-role{
 .project-preview {
   padding-right: 0;
 }
+
 #project0 .project-preview {
-  background-color: #e58d6d;
+  /* background-color: #e58d6d; */
   background-image: url(../images/ih-feature-img-lg.png);
   background-size: cover;
   margin: 0 auto;
 }
 
 #project1 .project-preview {
-  background-color: #e58d6d;
+  /* background-color: #e58d6d; */
   background-image: url(../images/fh-feature-img-sm.png);
   background-size: cover;
   margin: 0 auto;
 }
 
 #project2 .project-preview {
-  background-color: #79b2d6;
+  /* background-color: #79b2d6; */
   background-image: url(../images/st360-feature-img-sm.png);
   background-size: cover;
 }
 
 #project3 .project-preview {
-  background-color: #9fa5a7;
+  /* background-color: #9fa5a7; */
   background-image: url(../images/skcch-feature-img-lg.png);
   background-size: cover;
 }
 
 #project4 .project-preview{
-  background-color: #9fa5a7;
+  /* background-color: #9fa5a7; */
   background-image: url(../images/ddl-feature-img-sm.png);
   background-size: cover;
 }
@@ -552,6 +567,16 @@ ul.contact-list li a {
 
 ul.contact-list li a:focus, ul.contact-list li a:hover {
   color: #c6cfd0;
+}
+/* Skill section */
+
+.skill-set ul {
+  padding-left:25px;
+}
+
+.skill-set ul li{
+  font-size: 1.2em;
+  line-height: 1.8em;
 }
 
 /* Project Page */
@@ -703,6 +728,7 @@ ul.ideation-list {
   letter-spacing:.05em;
 }
 
+
 .project-scope,.project-methology{
   padding:5px;
   height: auto;
@@ -725,6 +751,7 @@ img.solution-img{
   margin: 10px auto;
   background-color:white;
 }
+
 #side-note{
   font-size: 1.2em;
   line-height: 1.8em;
