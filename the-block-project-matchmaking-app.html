@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 
+<!-- HEADING -->
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
@@ -8,7 +10,7 @@
   <meta name="renderer" content="webkit">
   <title>Jessica Pan | Design Portfolio | The Block Project</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- GLOBAL SITE TAG (gtag.js)- GOOGLE ANALYTICS -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121207387-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -17,31 +19,37 @@
       dataLayer.push(arguments);
     }
     gtag('js', new Date());
-
     gtag('config', 'UA-121207387-1');
   </script>
 
-  <!--stylying-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
-  <link rel="stylesheet" href="css/basic.css">
-  <link rel="stylesheet" href="css/main.css">
-
-  <!--js or jquery-->
+  <!-- JS/JQUERY -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+  <script src="js/jquery.smooth-scroll.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
 
+  <!-- STYLING -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="css/basic.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
+<!-- HEADING ENDS -->
 
-<body id="project-page">
-  <!-- masterhead section -->
+<!-- BODY -->
+
+<body id="project-page" data-spy="scroll" data-target="#sidemenu">
+
+  <!-- FEATURE IMAGE -->
+  <img class="feature-image" id="ih-feature-imge" src="images_new/projects/tbp-matching-app/feature-img-tbp-v2.png" alt="Italian Trulli">
+
+  <!-- HEADER -->
   <header>
     <div class="main-container" id="topnav">
-      <h4 class="logo"> <a href="index.html"><strong>Jessica</strong> Pan</a></h4>
+      <p class="logo"> <a href="index.html"><strong>Jessica</strong> Pan</a></p>
       <nav class="site-nav">
         <ul>
           <li class="active">
@@ -63,6 +71,7 @@
             </a>
           </li>
           <li>
+            <!-- SHOW ON MOBILE ONLY -->
             <ul class="nav-contact-list">
               <li><a href="https://www.linkedin.com/in/chia-ming-jessica-pan-58403986" target="_blank "><i class="fab fa-linkedin fa-2x "></i></a></li>
               <li><a href="https://chiamingpan.github.io/" target="_blank "><i class="fab fa-github fa-2x "></i></a></li>
@@ -77,233 +86,458 @@
       </div>
     </div>
   </header>
-  <section class="project-masterhead">
-    <div class="main-container">
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <h1 class="project-heading">The Block Project Matchmaking App</h1>
-          <p class="sub-project-heading">An internal web app that enhances the matchmaking process for the Block Project</p>
-          <div class="project-thumbnail" id="fh-banner">
-          </div>
-        </div>
-      </div>
-  </section>
-  <section class="project-intro">
-    <div class="main-container">
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-8 col-xs-12">
-          <h3>Overview</h3>
-        </div>
-        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12" id="overview">
-          <p>This is my volunteer project in cooperation with the team of the <a class="external-link" href="https://www.facinghomelessness.org/" target="_blank ">Facing Homelessness</a>, a community focused non-profit focused on solutions for homelessness
-            based on developing relationships. One of their ongoing projects- <a class="external-link" href="http://redlineathletics.com/" target="_blank ">The Block Project</a>- aims to invite the local community into the task of ending homelessness
-            by placing a BLOCK Home in the backyard of one single-family lot on every residentially zoned block in Seattle. Inspired by their vision, I proactively reached out to them and proposing the matchmaking idea for the team to improve the matching
-            experience for those who want to do good.
-            <p>Firstly, I’ve recruited a team composed of:
-            </p>
+  <!-- HEADER ENDS -->
 
-            <ul class="project-member">
-              <li>Business marketer
-              </li>
-              <li>
-                UX designer
-              </li>
-              <li>
-                Full stack software engineer
-              </li>
-              <li>
-                Back-end engineer
-              </li>
-            </ul>
-            <p> As I contributed as the Project Leader, UX Designer, and Front-end Developer, my main responsibilities are to manage the project development, communicate with clients, as well as conduct the research, ideation, and wireframe design. Moreover,
-              I cooperated closely with a senior full stack engineer to develop the protosite by using HTML5, SCSS, and JavaScript.
-            </p>
-            <button class="large-device" id="solutionBtn"> <a href="#solution">Jump to Solution</a></button>
+  <!-- SECTION 00 :OVERVIEW -->
+  <section id="overview" class="project-intro">
+    <div class="main-container">
+      <div class="row">
+
+        <!-- SIDEMENU -->
+        <nav id="sidemenu" class="d-none d-sm-block">
+          <ul class="sideMenu nav flex-column">
+            <li class="sideMenu_item nav-item"><a class="nav-link" href="#overview">00. Overview</a></li>
+            <li class="sideMenu_item nav-item"><a class="nav-link" href="#process">01. Process</a></li>
+            <li class="sideMenu_item nav-item"><a class="nav-link" href="#results">02. Results</a></li>
+            <li class="sideMenu_item nav-item"><a class="nav-link" href="#nextStep">03. Next Steps</a></li>
+            <li class="sideMenu_item nav-item"><a class="nav-link" href="#reflection">04. Reflection</a></li>
+          </ul>
+        </nav>
+        <!-- SIDEMENU ENDS -->
+
+        <!-- SUBSECTION:PROJECT BRIEF -->
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <h1 class="project-title">The BLOCK Project Matchmaking App</h1>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="side-note">
-          <h5 class="duration">Duration: 2017 - Present</h5>
-          <h5 class="role">Roles: Project Lead, UX Designer</h5>
-          <h5 class="tool">Tools: Illustrator, Sketch, GitHub</h5>
-          <h5 class="platform">
-            <i class="fas fa-laptop fa-lg applied"></i>
-            <i class="fas fa-tablet-alt fa-lg"></i>
-            <i class="fas fa-mobile-alt fa-lg"></i>
-          </h5>
-          <button class="small-device" id="solutionBtn"> <a href="#solution">Jump to Solution</a></button>
+        <!-- SUBSECTION:PROJECT BRIEF ENDS -->
+
+        <!-- PROJECT INTRO -->
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12" id="project-intro">
+          <p>The project was developed in cooperation with the team of <a class="external-link" href="https://www.facinghomelessness.org/" target="_blank ">Facing Homelessness</a> on one of their projects- <a class="external-link" href="http://the-block-project.org/home"
+              target="_blank ">The Block Project</a>. The application is to provide a space for Facing Homelessness staff (Admins) and caseworkers at homeless shelters (Caseworkers) to <strong>help homeowners (Hosts) match with homeless people (Residents) to host them at their backyard</strong>.
+            I collaborated with a team composed of UX designer, full stack software engineer, and back-end engineer.</p>
         </div>
+        <!-- PROJECT INTRO ENDS -->
+
+        <!-- PROJECT KEY HIGHLIGHT -->
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="key-highlight">
+          <ul class="client">
+            <li class="client"> <strong>Client:</strong> Facing Homelessness</li>
+            <li class="role"><strong>Roles:</strong> Project Lead, UX Designer</li>
+            <li class="tool"><strong>Toolkits:</strong> Illustrator, Sketch, HTML5, SCSS, JavaScript GitHub</li>
+            <li class="duration"><strong>Duration:</strong> </i> 2017 - Present</li>
+          </ul>
+        </div>
+        <!-- PROJECT KEY HIGHLIGHT ENDS -->
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <hr>
+        </div>
+
+        <!-- PROJECT CHALLENGE-->
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="challenge">
+          <h2>CHALLENGE</h2>
+          <h4 class="highlight"> “Streamline The BLOCK Project’s current matching process”</h4>
+
+          <button id="solutionBtn"><a class="jump-to-solution" href="#results">Jump to solution</a>
+          </button>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <hr>
+        </div>
+        <!-- PROJECT CHALLENGE ENDS -->
+
       </div>
     </div>
   </section>
+  <!-- SECTION 00 :OVERVIEW ENDS -->
+
+  <!-- SECTION 01: PROJECT PROCESS -->
 
   <section class="project-process">
     <div class="main-container">
       <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 " id="research">
-          <h3>1. RESEARCH</h3>
-          <p><b>Learn from People:</b></p>
-          <p>To better understand the project, I conducted interviews with the staff from The Block Project to learn their current matchmaking process, the challenges, and the goals. These are my key takeaways from the interviews:
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="process">
+          <h2>01 <br>
+            PROCESS</h2>
+          <a data-fancybox="gallery" href="images_new/projects/tbp-matching-app/tbp-design-process.png" data-caption="Process Timeline"><img src="images_new/projects/tbp-matching-app/tbp-design-process.png" alt="Process timeline"></a>
+          <p class="caption"> Process Timeline [Click image to enlarge] </p>
+  </section>
+
+  <!-- PROCESS: EMPHASIZE -->
+  <section class="project-process">
+    <div class="main-container">
+      <div class="row">
+
+        <div class="emphasize">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h3 class="light">— Phase 1 of 5 —</h3>
+            <h3>Emphasize</h3>
+            <h4>User Research </h4>
+            <p>To understand how the project works and who is involved in each journey stage, I created the <a href="#stakholder-map"><strong>stakeholder map</strong></a>, conducted <a href="#staff-interview-group-observation"><strong> a staff interview & group observation</strong></a>,
+              and mapped an
+              <a href="#existing-user-journey"><strong> existing user journey</strong></a>.</p>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <p id="stakholder-map" class="method"> Stakeholder Map</p>
+          </div>
+          <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 " id="research">
+            <p>
+              At the beginning of the research, I studied The BLOCK Project and outlined the stakeholder journey map to give me a holistic view of the project.
+            </p>
+          </div>
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <a data-fancybox="gallery" href="images_new/projects/tbp-matching-app/tbp-current-process.png" data-caption="Stakeholder map"><img src="images_new/projects/tbp-matching-app/tbp-current-process.png" alt="stakeholder map "></a>
+            <p class="caption"> Stakeholder map [Click image to enlarge] </p>
+          </div>
+
+          <div id="staff-interview-group-observation" class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <p class="method"> Staff interview & Group observation
+            </p>
+          </div>
+          <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+            <p>
+              To gain a better understanding of the organization, project, and targeted users, I carried out a 1.5-hours staff interview at Facing Homelessness and also participated with the Community Bridging event at a local coffee shop where both neighbors living
+              outside and inside were invited for conversation and connection. I acted as one of the participants to observe other prospective hosts. These two events helped me to:</p>
+            <ul class="process-list">
+              <li class="client">recognize The BLOCK Project’s current focus </li>
+              <li class="role">gain the knowledge of how the project works in detail
+              </li>
+              <li class="tool">uncover the stakeholders’ behaviors, needs and challenges</li>
+            </ul>
+          </div>
+          <div class="quote col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h4 class="quote-line">“The team is working hard on optimizing our Matching phase which plays a significant role in fueling The BLOCK Project. ”</h4>
+            <p class="quote-person"> Sarah, Community Director at Facing Homelessness</p>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" id="existing-user-journey">
+            <p class="method"> Existing user journey
+            </p>
+          </div>
+
+          <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+            <p>
+              Based on the organization’s current focus, I created an existing user journey which highlights the interaction and touchpoints for the stakeholders to improve the matching process.
+            </p>
+          </div>
+
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <a data-fancybox="gallery" href="images_new/projects/tbp-matching-app/tbp-matching-process.png" data-caption="Existing matching journey"><img src="images_new/projects/tbp-matching-app/tbp-matching-process.png" alt="Existing matching journey">
+          </a>
+            <p class="caption"> Existing matching journey [Click image to enlarge] </p>
+          </div>
+        </div>
+  </section>
+  <!-- PROCESS: EMPHASIZE ENDS -->
+
+  <!-- PROCESS: DEFINE -->
+  <section class="project-process">
+    <div class="main-container">
+      <div class="row">
+        <div class="define">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+            <h3 class="light"> — Phase 1 of 5 —</h3>
+            <h3>Define</h3>
+            <h4>Project Scope </h4>
+            <p>There are three main stages in the matching process: (1) completing profiles, (2) matching host and resident, and (3) maintaining the host-and-resident relationship. Under the time constraint, our team decided to touch on the first stage-
+              <strong>improving the profile building experience</strong>.</p>
+            <div class="space">
+            </div>
+            <h4>Define Users and Problems  </h4>
+            <a data-fancybox="gallery" href="images_new/projects/tbp-matching-app/tbp-design-concept.png" data-caption="Define users and problems"><img src="images_new/projects/tbp-matching-app/tbp-design-concept.png" alt="Define users and problems"></a>
+            <p class="caption"> Define users and problems [Click image to enlarge] </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+  <!-- PROCESS: DEFINE ENDS -->
+
+  <!-- PROCESS: IDEATE -->
+  <section class="project-process">
+    <div class="main-container">
+      <div class="row">
+        <div class="ideate">
+
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+            <h3 class="light"> — Phase 3 of 5 —</h3>
+            <h3>Ideate</h3>
+            <h4>Market Research</h4>
+            <p>To generate new ideas around problems, I conducted an<a href="#analogous-inspiration"><strong>analogous inspiration exercise</strong></a>, re-organized <a href="#content-inventory"><strong>content inventory</strong></a>, created <a href="#information-architecture"><strong>Information Architecture</strong></a>              and <a href="#wireframes"><strong>wireframes</strong></a>.
+            </p>
+
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" id="analogous-inspiration">
+              <p class="method"> Analogous Inspiration
+              </p>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+              <p>
+                To get inspiration of creating a profile form with better user experience, I probed the profile process of Airbnb and HomeAway. The former shares the strong connections between the host and the guest while the latter focuses on providing the best for
+                the family’s memory. They are all about sharing the space by creating the best human connection.
+              </p>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <a data-fancybox="gallery" href="images_new/projects/tbp-matching-app/tbp-analogous-inspiration.png" data-caption="Analogous inspiration"><img src="images_new/projects/tbp-matching-app/tbp-analogous-inspiration.png" alt="Analogous inspiration"></a>
+              <p class="caption">
+                Analogous inspiration [Click image to enlarge] </p>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" id="content-inventory">
+              <p class="method"> Content Inventory
+              </p>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+              <p>
+                To make the <strong>long questionnaire easy to complete</strong>, I divided the original questionnaire into three sections and then re-organized each question into new section and also added the column for side-note/tips
+              </p>
+              <ol class="process-list">
+                <li class="client">Start with Hello</li>
+                <li class="role">Share your backyard
+                </li>
+                <li class="tool">Set expectation</li>
+              </ol>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <p class="caption">Original questionnaire
+              </p>
+              <a data-fancybox="gallery" href="images_new/projects/tbp-matching-app/tbp-questions-original.png" data-caption="Original questionnaire"><img src="images_new/projects/tbp-matching-app/tbp-questions-original.png" alt="Original questionnaire">
+                </a>
+
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <p class="caption">Revised questionnaire
+              </p>
+              <a data-fancybox="gallery" href="images_new/projects/tbp-matching-app/tbp-questions-revised.png" data-caption="Revised questionnaire"><img src="images_new/projects/tbp-matching-app/tbp-questions-revised.png" alt="Revised questionnaire">
+              </a>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" id="information-architecture">
+              <p class="method"> Information architecture
+              </p>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+              <p>
+                Prior to prototyping, I created the information architecture from the discussion with engineers. I envisioned three phases of the Matching process to make the project more consistent and scalable for the long-term design.
+              </p>
+            </div>
+
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <a data-fancybox="gallery" href="images_new/projects/tbp-matching-app/tbp-information-architecture.png" data-caption="Information architecture"><img src="images_new/projects/tbp-matching-app/tbp-information-architecture.png" alt="Information architecture"></a>
+              <p class="caption">Information architecture
+              </p>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" id="wireframes">
+              <p class="method">Wireframes
+              </p>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+              <p>
+                I listed the key call-to-actions for each user type and sketched out nine pages which contains key steps for users to take action.
+              </p>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <a data-fancybox="gallery" href="images_new/projects/tbp-matching-app/tbp-wireframe.jpg" data-caption="Initial wireframe"><img src="images_new/projects/tbp-matching-app/tbp-wireframe.jpg" alt="Initial wireframe">
+              </a>
+              <p class="caption">Initial wireframe
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- PROCESS: IDEATE ENDS -->
+
+  <!-- PROCESS: PROTOTYPE -->
+  <section class="project-process">
+    <div class="main-container">
+      <div class="row">
+        <div class="prototype">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h3 class="light"> — Phase 4 of 5 —</h3>
+            <h3>Prototype</h3>
+            <h4>Low-fidelity Prototype </h4>
+            <p>Based on the initial sketch structure, I came up with a low-fidelity prototype for the primary user types, Hosts and Caseworkers, in Sketch.</p>
+            <a data-fancybox="gallery" href="images_new/projects/tbp-matching-app/tbp-low-fi-proto.png" data-caption="Low-fidelity prototype"><img src="images_new/projects/tbp-matching-app/tbp-low-fi-proto.png" alt="low-fidelity prototype"></a>
+            <p class="caption">Low-fidelity prototype
+            </p>
+            <div class="space"></div>
+
+            <h4>Iteration</h4>
+            <p>Though I had limitation to get access to the real Caseworkers and Hosts, I brought the prototype design to get critique and feedback from <strong>Facing Homeless staffs</strong>, who work closely with the other users and
+              <strong>four participants who have strong interest in The BLACK PROJECT from my professional network</strong>.</p>
+            <p>
+              Main feedback:
+            </p>
+            <a data-fancybox="gallery" href="images_new/projects/tbp-matching-app/tbp-iteration.png" data-caption="Iteration"><img src="images_new/projects/tbp-matching-app/tbp-iteration.png" alt="Iteration">
+            </a>
+            <p class="caption">Things to keep and leave behind
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- PROCESS: PROTOTYPE ENDS -->
+
+  <!-- PROCESS: IMPLEMENTATION -->
+  <section class="project-process">
+    <div class="main-container">
+      <div class="row">
+
+        <div class="Implementation">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h3 class="light"> — Phase 5 of 5 —</h3>
+            <h3>Implement</h3>
+            <h4>Design Implementation</h4>
+            <p>As the developers opted for ember.js as the project's developing framework, I learned how to edit HTML/Sass and implemented the final prototype design to ember.js. </p>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" id="wireframes">
+            <p class="method">Revised user flow
+            </p>
+          </div>
+          <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+            <p>
+              During the development, we improved the user flow and are working on the final touches before launching the web app in June.
+            </p>
+          </div>
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <a data-fancybox="gallery" href="images_new/projects/tbp-matching-app/tp-revised-user-flow.png" data-caption="Communicating with the Facing Homelessness staffs and engineers on the revised user flow"><img src="images_new/projects/tbp-matching-app/tp-revised-user-flow.png" alt="Revised user flow">
+            </a>
+            <p class="caption">Communicating with the Facing Homelessness staffs and engineers on the revised user flow
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- PROCESS: IMPLEMENTATION ENDS -->
+  <!-- SECTION 01: PROJECT PROCESS ENDS -->
+
+  <!--SECTION 02: RESULTS-->
+  <section>
+    <div class="main-container">
+      <div class="row">
+        <div id="results" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <h2>02
+            <br>
+            RESULTS
+          </h2>
+          <h4>Key features</h4>
+          <img class="key-features" src="images_new/projects/tbp-matching-app/features-tbp.png" alt="key features">
+          <div class="space">
+          </div>
+          <h4>Latest live site
+          </h4>
+          <p>The site is live now for internal testing and keep optimizing it by gathering more feedback from real users.
           </p>
-          <ul class="research-list">
-            <li><strong>4 User Types:</strong> Hosts, Residents, Caseworkers, and Administrators
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <video width="100%" height="auto" controls>
+        <source src="images_new/projects/tbp-matching-app/tbp-demo-final.mov" type="video/mp4">
+        </video>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--SECTION 02: RESULTS END-->
+
+  <!-- SECTION 03: NEXT STEPS-->
+  <section class="project-process">
+    <div class="main-container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 " id="nextStep">
+          <h2>03<br>NEXT STEP
+          </h2>
+          <ul class="next-step-list">
+            <li>Test, test, test the product with real users from admin, hosts, to caseworkers
             </li>
-            <li><strong>Time Consuming:</strong> It takes over a month to match the host and the residents.
+            <li>Set benchmark measurement and iterate the product
             </li>
-            <li><strong>Lack of Human Beauty:</strong> The interface of the existing form is not inviting to the upcoming members.
+            <li>Move on to develop the second project phase- matchmaking features
             </li>
           </ul>
-          <p><b>Analogous Inspiration:</b> </p>
-          <p>To learn how to design a user-friendly form for a matchmaking app, I chose <a href="https://www.airbnb.com/">Airbnb</a> and <a href="https://www.homeaway.com/">HomeAway</a> to be my examples of connecting peoples- the former shares the strong
-            bondings between the hosts and the guests while the latter focuses on providing the best memories for the family. </p>
-          <p>Below are the 3 key design patterns that help me to design a more seamless user journey map:</p>
-          <div class="row">
-            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 project-highlight">
-              <a data-fancybox="gallery" href="images/airbnb_sample1.png" data-caption="Design pattern: Progres bar helps users know how far they have been down."><img src="images/airbnb_sample1.png" alt="takeaway1"></a>
-            </div>
-            <div class=" col-lg-5 col-md-5 col-sm-5 col-xs-12">
-              <p class="side-note"><span class="number">(1)</span> The progress bar, which indicates how much of the form the users have completed and how much remains, might ease the uncertainty for users</p>
-            </div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 project-highlight">
-              <a data-fancybox="gallery" href="images/airbnb_sample2.png" data-caption="Design pattern: Side notes and ideas assist users complete the form"><img src="images/airbnb_sample2.png" alt="takeaway2"></a>
-            </div>
-            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
-              <p class="side-note"><span class="number">(2)</span> Side notes or suggestions may be a great helper for users to fill up the form </p>
-            </div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 project-highlight">
-              <a data-fancybox="gallery" href="images/homeaway_sample1.png" data-caption="Design pattern: Security matters">  <img src="images/homeaway_sample1.png" alt="takeaway3"></a>
-            </div>
-            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
-              <p class="side-note"> <span class="number">(3)</span> Clarification of how and when the users' information will be used gives them greater peace of mind</p>
-            </div>
-          </div>
-        </div>
-  </section>
-
-  <section class="project-process">
-    <div class="main-container">
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 " id="ideation">
-          <h3>2. IDEATION</h3>
-          <p>The user flow is conducted to help us learn what challenges users might encounter in each phase.
+          <a data-fancybox="gallery1" href="images_new/projects/tbp-matching-app/tbp-next-step-peek.png" data-caption="Next-step sneak peek"><img src="images_new/projects/tbp-matching-app/tbp-next-step-peek.png" alt="Next-step sneak peek"></a>
+          <p class="caption">Above is a sneak peek for the next step
           </p>
-          <img class="ideation-img" src="images/fh-user-flow.png">
-
-          <p>Afterward, we developed 3 concepts to reach the goal of optimizing the current matchmaking process in 2 seperate phases. And based on the concepts, we drafted out the journey map for each of the accounts
-          </p>
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 " id="ideation">
-            <a data-fancybox="gallery" href="images/fh-design-concept.png" data-caption="Design concept"><img class="ideation-img" src="images/fh-design-concept.png"></a>
-          </div>
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 " id="ideation">
-            <a data-fancybox="gallery" href="images/fh-bird-view-map.png" data-caption="Bird-view of the user flow"><img class="ideation-img" src="images/fh-bird-view-map.png"></a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="project-process">
-    <div class="main-container">
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 " id="solution">
-          <h3>3. Solution</h3>
-          <p> The high-fidelity prototype is generated to make the matchmaking process more accessible and easy-to-use, as well as to highlight the core value of human beauty. Since the project is still under the back-end developement and has not been launched
-            yet, below are the 3 highlight for your quick view. The interactive prototype will be rolled out right after the launch. Please stay tuned! </p>
-          <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12" id="solution">
-            <a data-fancybox="gallery" href="images/fh-demo1.png" data-caption="Host account: Basic background information form with tooltips on the side to help complete the form at ease"><img class="solution-img" src="images/fh-demo1.png" alt="fh-demo1"></a>
-          </div>
-          <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12 " id="solution">
-            <a data-fancybox="gallery" href="images/fh-demo2.png" data-caption="Host account: Basic background form with the progress bar at the bottom and the story highlight to share the human beauty"><img class="solution-img" src="images/fh-demo2.png" alt="fh-demo2"></a>
-          </div>
-          <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12 " id="solution">
-            <a data-fancybox="gallery" href="images/fh-demo3.png" data-caption="Caseworker account: Matching page with the top filtering options"><img class="solution-img" src="images/fh-demo3.png" alt="fh-demo2"></a>
-          </div>
         </div>
       </div>
     </div>
   </section>
+  <!-- SECTION 02: NEXT STEPS ENDS -->
 
+  <!-- SECTION 03: REFLECTION -->
   <section class="project-process">
     <div class="main-container">
       <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="reflection">
-          <h3>4. Reflection</h3>
-
-          <p>
-            <strong>UI design</strong><br>
-            <ul class="reflection-list">
-              <li>This was a self-taught experience to learn Sketch and design the wireframe and UI with this tool in 3 weeks. One of the most important takeways is to build up a design system like <a class="external-link" href="https://medium.com/sketch-app-sources/setting-up-a-design-system-8729510def93"
-                  target="_blank "> this Sketch post </a> so that to scale up the project in less timeline.
-              </li>
-            </ul>
-          </p>
-
-          <p>
-            <strong>Front-end development</strong><br>
-            <ul class="reflection-list">
-              <li>For this project, we use Ember.js framework to build this complex system but I had a steep learning curve to apply what I just learned from the basic javascript course to the protosite. However, I spent extra amount of time on studying the
-                framework concept and learned from the senior member</li>
-            </ul>
-          </p>
-
-          <p><strong>Next Step</strong>
-            <ul class="reflection-list">
-              <li>To collect the feedback from the users and make changes if needed
-              </li>
-
-            </ul>
-          </p>
-        </div>
-
-      </div>
-    </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 " id="reflection">
+          <h2>04<br>REFLECTION
+          </h2>
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+            <h4 class="center highlight">This was my first UX project I took while switching career path. <br>I started with a great failure and learned…
+            </h4>
+          </div>
+          <ul class="next-step-list">
+            <li>Test one user is better than none
+            </li>
+            <li>Launch product first, instead of making it perfect (which is never possible)
+            </li>
+            <li>Having project envisioned is important but knowing how to define project scope but make it deliverable is even more crucial
+            </li>
+            <li>Build a design system which helps effectively scale the project
+            </li>
+          </ul>
   </section>
+  <!-- SECTION 03: REFLECTION ENDS-->
 
-  <section class="other-projects">
+  <!-- SECTION 04: OTHER PROJECTS-->
+  <section>
     <div class="main-container">
       <div class="row">
-        <div class="others-headline col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+        <div class="others-headline col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <h2>Other Projects</h2>
         </div>
         <div class="others col-lg-6 col-md-6 col-sm-6 col-xs-12">
-          <a href="skcch-site-redesign.html">
-                        <span class="project3-card"></span>
-                        <p>SKCCH Site Redesign</p>
-                    </a>
+          <a href="turbopatent-invention-hub.html">
+              <span class="project1-card"></span>
+              <p>TurboPatent Invention Hub</p>
+          </a>
         </div>
 
         <div class="others col-lg-6 col-md-6 col-sm-6 col-xs-12">
-          <a href="sportsthink-360-brand-website.html"><span class="project2-card">
-                    </span>
-          <p>Sportsthink-360 Brand Website</p></a>
+          <a href="google-design-challenge.html">
+            <span class="project3-card">
+            </span>
+            <p>Google Design Challenge</p>
+        </a>
         </div>
 
       </div>
     </div>
   </section>
+  <!-- SECTION: OTHER PROJECTS ENDS-->
+
+  <!-- FOOTER -->
   <footer>
     <div class="main-container">
-      <ul class="project-list">
-        <li><a href="the-block-project-matchmaking-app.html">The Block Project Web App &#8226;</a> </li>
-        <li><a href="sportsthink-360-brand-website.html">Sportsthink-360 Brand Website &#8226;</a> </li>
-        <li><a href="skcch-site-redesign.html">SKCCH Site Redesign</a> </li>
-      </ul>
-
-      <ul class="contact-list ">
+      <ul class="contact-list">
         <li><a href="https://www.linkedin.com/in/chia-ming-jessica-pan-58403986" target="_blank "><i class="fab fa-linkedin fa-2x "></i></a></li>
         <li><a href="https://chiamingpan.github.io/" target="_blank "><i class="fab fa-github fa-2x "></i></a></li>
         <li><a href="mailto:jessicapan1224@gmail.com " target="_top "><i class="far fa-envelope fa-2x "></i></a>
 
         </li>
       </ul>
-      <p>Copyright © 2018 Jessica Pan. All rights reserved.</p>
+      <p>Copyright © 2019 Jessica Pan. All rights reserved.</p>
     </div>
   </footer>
+  <!-- FOOTER END -->
+
   <!--
 <script src="js/script.js ">
 </script>
@@ -314,6 +548,8 @@
       $(this).toggleClass('open');
     })
   </script>
+
 </body>
+<!-- BODY ENDS -->
 
 </html>

@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 
+<!-- HEADING -->
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="renderer" content="webkit">
-  <title>Jessica Pan | Design Portfolio | Invention Hub</title>
+  <title>Jessica Pan | Design Portfolio | TurboPatent Invention Hub</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- GLOBAL SITE TAG (gtag.js)- GOOGLE ANALYTICS -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121207387-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -17,31 +19,37 @@
       dataLayer.push(arguments);
     }
     gtag('js', new Date());
-
     gtag('config', 'UA-121207387-1');
   </script>
 
-  <!--stylying-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
-  <link rel="stylesheet" href="css/basic.css">
-  <link rel="stylesheet" href="css/main.css">
-
-  <!--js or jquery-->
+  <!-- JS/JQUERY -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+  <script src="js/jquery.smooth-scroll.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
 
+  <!-- STYLING -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="css/basic.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
+<!-- HEADING ENDS -->
 
-<body id="project-page">
-  <!-- masterhead section -->
+<!-- BODY -->
+
+<body id="project-page" data-spy="scroll" data-target="#sidemenu">
+
+  <!-- FEATURE IMAGE -->
+  <img class="feature-image" id="ih-feature-imge" src="images_new/projects/tp-invention-hub/feature-img-ih.png" alt="Italian Trulli">
+
+  <!-- HEADER -->
   <header>
     <div class="main-container" id="topnav">
-      <h4 class="logo"> <a href="index.html"><strong>Jessica</strong> Pan</a></h4>
+      <p class="logo"> <a href="index.html"><strong>Jessica</strong> Pan</a></p>
       <nav class="site-nav">
         <ul>
           <li class="active">
@@ -63,6 +71,7 @@
             </a>
           </li>
           <li>
+            <!-- SHOW ON MOBILE ONLY -->
             <ul class="nav-contact-list">
               <li><a href="https://www.linkedin.com/in/chia-ming-jessica-pan-58403986" target="_blank "><i class="fab fa-linkedin fa-2x "></i></a></li>
               <li><a href="https://chiamingpan.github.io/" target="_blank "><i class="fab fa-github fa-2x "></i></a></li>
@@ -77,255 +86,337 @@
       </div>
     </div>
   </header>
-  <section class="project-masterhead">
+  <!-- HEADER ENDS -->
+
+  <!-- SECTION 00 :OVERVIEW -->
+  <section id="overview" class="project-intro">
     <div class="main-container">
       <div class="row">
+
+        <!-- SIDEMENU -->
+        <nav id="sidemenu" class="d-none d-sm-block">
+          <ul class="sideMenu nav flex-column">
+            <li class="sideMenu_item nav-item"><a class="nav-link" href="#overview">00. Overview</a></li>
+            <li class="sideMenu_item nav-item"><a class="nav-link" href="#process">01. Process</a></li>
+            <li class="sideMenu_item nav-item"><a class="nav-link" href="#reflection">02. Results</a></li>
+            <li class="sideMenu_item nav-item"><a class="nav-link" href="#reflection">03. Reflection</a></li>
+          </ul>
+        </nav>
+        <!-- SIDEMENU ENDS -->
+
+        <!-- SUBSECTION:PROJECT BRIEF -->
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <h1 class="project-heading">Invention Hub Web App</h1>
-          <p class="sub-project-heading">An AI-powered Web App to optimize the user experience of submitting the idea form </p>
-          <div class="project-thumbnail" id="ih-banner">
-          </div>
+          <h1 class="project-title">TurboPatent Invention Hub</h1>
         </div>
-      </div>
-  </section>
-  <section class="project-intro">
-    <div class="main-container">
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-8 col-xs-12">
-          <h3>Overview</h3>
+        <!-- SUBSECTION:PROJECT BRIEF ENDS -->
+
+        <!-- PROJECT INTRO -->
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12" id="project-intro">
+          <p>This is the internship project in cooperation with <a class="external-link" href="https://turbopatent.com/" target="_blank ">TurboPatent</a>, a Seattle-based tech company which aims to reinvent the patent process with artificial intelligence
+            technology. The goal of the project is to define the current design problems of Invention Hub and to explore the users need on the web app device.</p>
         </div>
-        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12" id="overview">
-          <p>This is the internship project in cooperation with TurboPatent, a Seattle-based tech company which aims to reinvent the patent process with AI technology. The goal of the project is to define the current design problems and to explore the users
-            need on the Web App device.</p>
-          <br>
-          <p>
-            <strong>
-              Project Scope
-            </strong>
-          </p>
-          <img class="project-scope" src="images/ih-project-scope.png" alt="">
-          <button class="large-device" id="solutionBtn"> <a href="#reflection">Jump to Solution</a></button>
+        <!-- PROJECT INTRO ENDS -->
+
+        <!-- PROJECT KEY HIGHLIGHT -->
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="key-highlight">
+          <ul class="client">
+            <li class="client"> <strong>Client:</strong> TurboPatent</li>
+            <li class="role"><strong>Roles:</strong> UX Researcher, UX Designer</li>
+            <li class="tool"><strong>Toolkits:</strong> Sketch,Invision, Adobe XD</li>
+            <li class="duration"><strong>Duration:</strong> </i> Sep 2018 - Nov 2018</li>
+          </ul>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="side-note">
-          <h5 class="duration">September, 2018 - November, 2018</h5>
-          <h5 class="role">Roles: UX Designer</h5>
-          <h5 class="tool">Tools: Sketch, ADOBE XD</h5>
-          <h5 class="platform">
-            <i class="fas fa-laptop fa-lg applied"></i>
-            <i class="fas fa-tablet-alt fa-lg"></i>
-            <i class="fas fa-mobile-alt fa-lg"></i>
-          </h5>
-          <button class="small-device" id="solutionBtn"> <a href="#solution">Jump to Solution</a></button>
+        <!-- PROJECT KEY HIGHLIGHT ENDS -->
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <hr>
         </div>
+
+        <!-- PROJECT CHALLENGE -->
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="challenge">
+          <h2>CHALLENGE</h2>
+          <h4 class="highlight"> “Redesign the Invention Hub to boost the app conversion rate”</h4>
+
+          <button id="solutionBtn"><a class="jump-to-solution" href="#results">Jump to solution</a>
+          </button>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <hr>
+        </div>
+
+        <!-- PROJECT CHALLENGE ENDS -->
+
       </div>
     </div>
   </section>
+  <!-- SECTION 00 :OVERVIEW ENDS -->
+
+  <!-- SECTION 01: PROJECT PROCESS -->
 
   <section class="project-process">
     <div class="main-container">
       <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 " id="research">
-          <h3>1. DISCOVER</h3>
-          <p class="italic">
-            Well-thought-out design always starts from listening
-          </p>
-          <p>Before the baseline testing, I researched the patent application process and had a meeting with the Chief Product Officer who is experienced with working with the users. We listed the assumptions of the possible challenges of using the Invention
-            Hub and drafted the baseline test guide: research goal setting, measurement, recruiting plan, and detailed testing tasks.
-          </p>
-          <p>
-            <b>Baseline Testing Goals:
-            </b>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="process">
+          <h1>01<br> PROCESS</h1>
+          <a data-fancybox="gallery" href="images_new/projects/tp-invention-hub/ih-design-process.png" data-caption="Process timeline"><img src="images_new/projects/tp-invention-hub/ih-design-process.png" alt="Process timeline"></a>
+          <p class="caption"> Process Timeline [Click image to enlarge] </p>
+  </section>
+
+  <!-- PROCESS: EMPHASIZE -->
+  <section class="project-process">
+    <div class="main-container">
+      <div class="row">
+
+        <div class="emphasize">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h3 class="light">— Phase 1 of 4 —</h3>
+            <h3>Emphasize</h3>
+            <h4>User Research </h4>
+            <p>Since the patent industry is very new to me, except for online research, I conducted the <a href="#stakholder-map"><strong>stakeholder meeting </strong></a> and <a href="#staff-interview-group-observation"><strong>baseline testing</strong></a>              to directly understand the users.</p>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <p id="stakholder-map" class="method"> Stakeholder meeting</p>
+          </div>
+          <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 " id="research">
             <p>
-              <ul class="research-list">
-                <li>Establish a user performance baseline for the Invention Hub App prior to any design changes
-                </li>
-                <li>Set up and validate the user performance measures
-                </li>
-                <li>Identify the potential design concerns to be addressed to improve the user experience
-                </li>
-              </ul>
-              <p>During testing, I had tons of times that I would really like to slap on my forehand and shout “why I did not think of this back then?” Listening to the users’ thinking process is always the one sure way to let me know how to improve their
-                lives. </p>
-              <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 " id="research">
-                <a data-fancybox="gallery" href="images/ih-methology.png" data-caption="Methology"><img class="research-img" src="images/ih-methology.png"></a>
-              </div>
-        </div>
-      </div>
-  </section>
+              Before the baseline testing, I researched the patent application process and had a meeting with the Chief Product Officer, who is experienced working with the users to understand the product and business goal.
+            </p>
+          </div>
 
-  <section class="project-process">
-    <div class="main-container">
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 " id="ideation">
-          <h3>2. DEFINE</h3>
-          <p><b>Affinity Diagramming</b>
+          <div id="staff-interview-group-observation" class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <p class="method"> Baseline testing
+            </p>
+          </div>
+          <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
             <p>
-              <p>After collecting all the user feedback, I used the Affinity Diagramming tool to organize and analyze the data. The problems were divided into four categories: Navigation, Data Entry, Drawing, and Collaboration in which were then separated
-                into different priority levels.
-              </p>
-              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 " id="ideation">
-                <a data-fancybox="gallery" href="images/ih-affinity_diagramming1.JPG" data-caption="Affinity_Diagramming"><img class="ideation-img" src="images/ih-affinity_diagramming1.JPG"></a>
-              </div>
-              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 " id="ideation">
-                <a data-fancybox="gallery" href="images/ih-affinity_diagramming2.JPG" data-caption="Affinity_Diagramming"><img class="ideation-img" src="images/ih-affinity_diagramming2.JPG"></a>
-              </div>
-              <br>
-              <p><b>Key Problems</b></p>
-              <p>1. Navigation</p>
-              <div class="row">
-                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 project-highlight">
-                  <a data-fancybox="gallery" href="images/ih_problem_1.png" data-caption="Design problem: navigation"><img src="images/ih_problem_1.png" alt="takeaway1"></a>
-                </div>
-                <div class=" col-lg-5 col-md-5 col-sm-5 col-xs-12">
-                  <p class="side-note"><span class="number">(a)</span> Call-to-action on the dashboard is not clear enough
-                  </p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 project-highlight">
-                  <a data-fancybox="gallery" href="images/ih_problem_2.png" data-caption="Design problem: navigation"><img src="images/ih_problem_2.png" alt="takeaway1"></a>
-                </div>
-                <div class=" col-lg-5 col-md-5 col-sm-5 col-xs-12">
-                  <p class="side-note"><span class="number">(b)</span> On the Idea Description page, the Dashboard tab in the top navigation should be one level above the Idea Description and Activity
-                  </p>
-                </div>
-              </div>
-              <p>2. Idea Description</p>
-              <div class="row">
-                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 project-highlight">
-                  <a data-fancybox="gallery" href="images/ih_problem_3.png" data-caption="Design problem: idea description"><img src="images/ih_problem_3.png" alt="takeaway1"></a>
-                </div>
-                <div class=" col-lg-5 col-md-5 col-sm-5 col-xs-12">
-                  <p class="side-note"><span class="number">(a)</span> The section of Predictive Analysis is confusing</p>
-                  <p class="side-note"><span class="number">(b)</span> Input box is not self-explanatory</p>
-                  <p class="side-note"><span class="number">(c)</span> Require some guidelines for the Idea Description section.(For example, what information should be included? or how detailed should it be? )
-                  </p>
-                </div>
-              </div>
-              <p>3. Drawing tool</p>
-              <div class="row">
-                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 project-highlight">
-                  <a data-fancybox="gallery" href="images/ih_problem_4.png" data-caption="Design problem: drawing tool"><img src="images/ih_problem_4.png" alt="takeaway1"></a>
-                </div>
-                <div class=" col-lg-5 col-md-5 col-sm-5 col-xs-12">
-                  <p class="side-note"><span class="number">(a)</span> No one clicked on “Close” button to save the drawing </p>
-                  <p class="side-note"><span class="number">(b)</span> Hard to find the specific symbol</p>
-
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 project-highlight">
-                  <a data-fancybox="gallery" href="images/ih_problem_5.png" data-caption="Design problem: drawing tool"><img src="images/ih_problem_5.png" alt="takeaway1"></a>
-                </div>
-                <div class=" col-lg-5 col-md-5 col-sm-5 col-xs-12">
-                  <p class="side-note"><span class="number">(c)</span> Difficult to see the drawing completely while writing the Drawing Description</p>
-                  <p class="side-note"><span class="number">(d)</span> Need to make comments for the specific elements, not just the whole drawing</p>
-                </div>
-              </div>
-              <p><b>Persona</b>
-                <p>Based on the users profiles in the baseline testing, the two user personas were outlined as a great reference asset for our further design: the inventors and the product manager.
-                </p>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 " id="ideation">
-                  <a data-fancybox="gallery" href="images/ih-persona1.png" data-caption="Persona 1: Senior SDE"><img class="ideation-img" src="images/ih-persona1.png"></a>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 " id="ideation">
-                  <a data-fancybox="gallery" href="images/ih-persona2.png" data-caption="Persona 2: chief of Officer"><img class="ideation-img" src="images/ih-persona2.png"></a>
-                </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="project-process">
-    <div class="main-container">
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 " id="solution">
-          <h3>3. IDEATE</h3>
-          <p class="italic">“Don’t conform users; instead, conform the product to fit users’ habits” - Chief Product Officer
+              Then, I designed the baseline testing to reach the goals of:
+            </p>
+            <ul class="process-list">
+              <li>setting user performance measures prior to any design changes
+              </li>
+              <li>understanding users’ behaviors and needs
+              </li>
+              <li>identifying potential design concerns
+              </li>
+            </ul>
             <p>
-              <p> To analyze if the idea is innovative compared to the existing products, there is a list of questions to be clarified. However, most of the users indicated that they had no idea where and how to start describing an idea because they are not
-                professionals in this industry. We are thinking of making the idea capture easier by not only making the questions more conversational but also providing alternatives for the users to start expressing their idea from what they have at
-                hand.
-              </p>
+              <br> The testing mainly covers two sections:
+            </p>
+            <ol class="process-list">
+              <li><strong>Interview questions:</strong> Based on the user interview, I was able to create two user personas as a reference asset for our further design: the inventors and the product manager.
+                <a data-fancybox="gallery" href="images_new/projects/tp-invention-hub/tp-persona1.png" data-caption="Persona 1: Inventors"><img src="images_new/projects/tp-invention-hub/tp-persona1.png" alt="Persona 1: Inventors"></a>
+                <p class="caption"> Persona #1: Inventors [Click image to enlarge] </p>
+                <a data-fancybox="gallery" href="images_new/projects/tp-invention-hub/tp-persona2.png" data-caption="Persona 2: Product manager"><img src="images_new/projects/tp-invention-hub/tp-persona2.png" alt="Persona 2: Product manager"></a>
+                <p class="caption"> Persona #2: Product manager[Click image to enlarge] </p>
+              </li>
 
-              <p> <strong>Flow Chart</strong></p>
-              <p>The user flow chart were outlined based on the different scenarios. </p>
-              <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12" id="solution">
-                <a data-fancybox="gallery" href="images/ih-flow-chart.jpg" data-caption="Flow chart"><img class="solution-img" src="images/ih-flow-chart.jpg" alt="ih-flow-chart"></a>
+              <div class="space">
               </div>
+
+              <li><strong>Scenario and tasks:</strong> I listed out six tasks for participants to figure out the design problems.
+
+                <a data-fancybox="gallery" href="images_new/projects/tp-invention-hub/ih-scenario-task-results.png" data-caption="Scenario and task test"><img src="images_new/projects/tp-invention-hub/ih-scenario-task-results.png" alt="Scenario and task test"></a>
+                <p class="caption"> Result of scenario-and- task test [Click image to enlarge] </p>
+
+                <a data-fancybox="gallery" href="images_new/projects/tp-invention-hub/ih-design-problems-1.png" data-caption="Design problems on Dashboard page"><img src="images_new/projects/tp-invention-hub/ih-design-problems-1.png" alt="Design problems on dashboard page"></a>
+                <a data-fancybox="gallery" href="images_new/projects/tp-invention-hub/ih-design-problems-2.png" data-caption="Design problems on Description page"><img src="images_new/projects/tp-invention-hub/ih-design-problems-2.png" alt="Design problems on Description page"></a>
+                <a data-fancybox="gallery" href="images_new/projects/tp-invention-hub/ih-design-problems-3.png" data-caption="Design problems on Drawing Tool page"><img src="images_new/projects/tp-invention-hub/ih-design-problems-3.png" alt="Design problems on Drawing Tool page"></a>
+
+              </li>
+            </ol>
+          </div>
         </div>
       </div>
     </div>
   </section>
+  <!-- PROCESS: EMPHASIZE ENDS -->
 
+  <!-- PROCESS: DEFINE -->
   <section class="project-process">
     <div class="main-container">
       <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="reflection">
-          <h3>4. Prototype</h3>
-
-          <p>
-            <strong>Paper Prototype</strong><br>
-          </p>
-          <p class="italic">Bringing the most optimized experience to the users at every stage is a way of building positive brand awareness</p>
-          <div class=" col-lg-4 col-md-4 col-sm-12 col-xs-12" id="solution">
-            <a data-fancybox="gallery" href="images/ih-paper-proto1.jpg" data-caption="Paper Prototype - Dashboard Page"><img class="solution-img" src="images/ih-paper-proto1.jpg" alt="ih-paper-prototype"></a>
+        <div class="define">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+            <h3 class="light">— Phase 2 of 4 —</h3>
+            <h3>Define</h3>
+            <h4>Reframe Project Scope</h4>
+            <p>By conducting the Affinity Diagram, I defined the project to solve the existing design problems.
+            </p>
           </div>
-          <div class=" col-lg-4 col-md-4 col-sm-12 col-xs-12" id="solution">
-            <a data-fancybox="gallery" href="images/ih-paper-proto2.jpg" data-caption="Paper Prototype - Idea Details Page"><img class="solution-img" src="images/ih-paper-proto2.jpg" alt="ih-paper-prototype"></a>
+          <div id="staff-interview-group-observation" class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <p class="method"> Affinity diagram
+            </p>
           </div>
-          <div class=" col-lg-4 col-md-4 col-sm-12 col-xs-12" id="solution">
-            <a data-fancybox="gallery" href="images/ih-paper-proto3.jpg" data-caption="Paper Prototype - Drawing Mode Page"><img class="solution-img" src="images/ih-paper-proto3.jpg" alt="ih-paper-prototype"></a>
+          <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+            <p>
+              After collecting all the user feedback, I used the Affinity Diagramming exercise to organize and analyze the data. The problems were divided into four categories: Navigation, Data Entry, Drawing, and Collaboration. They were separated into different priority
+              levels in accordance with how frequent testers mentioned about the issue. I then scoped the project based on the priority levels and mainly focused on solving the two problems of:
+            </p>
+            <ul class="process-list">
+              <li>how to make the input more intuitive?
+              </li>
+              <li>how to help users collaborate on ideas with others?
+              </li>
+            </ul>
           </div>
-
-          <p> To test users on the low-fidelity prototype, it is always important to make the experience enjoyable and free of distraction. I designed a cardboard laptop screen in which paper screens can be dragged from one page to another. </p>
-          <p class="italic">"It's an innovative testing experience and I can closely image I am clicking through the real screen."- P3</p>
-          <p>The users enjoyed the testing phases and brought up invaluable feedback during the testing session. The task success rate of the paper prototype testing jumped <strong>from 34% to 88% </strong> and we collected more insights for building the
-            prototype.
-          </p>
-          <br>
-          <p><b>Hi-fi Prototype</b></p>
-          <p>After the revisions, we came up with the interactive high-fidelity prototype in the Invision.
-          </p>
-          <video width="650" height="400" controls>
-                   <source src = "images/ih_prototype_v3.mp4" type = "video/mp4">
-                </video>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <a data-fancybox="gallery" href="images_new/projects/tp-invention-hub/ih-affinity_diagramming1.JPG" data-caption="Affinity Diagram Exercise 2"><img src="images_new/projects/tp-invention-hub/ih-affinity_diagramming1.JPG" alt="Affinity Diagram Exercise 1"></a>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <a data-fancybox="gallery" href="images_new/projects/tp-invention-hub/ih-affinity_diagramming2.JPG" data-caption="Affinity Diagram Exercise 2"><img src="images_new/projects/tp-invention-hub/ih-affinity_diagramming2.JPG" alt="Affinity Diagram Exercise 2"></a>
+          </div>
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <p class="caption"> Affinity Diagram Exercise [Click image to enlarge] </p>
+          </div>
         </div>
       </div>
     </div>
   </section>
+  <!-- PROCESS: DEFINE ENDS -->
 
-  <section class="other-projects">
+  <!-- PROCESS: IDEATE -->
+  <section class="project-process">
     <div class="main-container">
       <div class="row">
-        <div class="others-headline col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+        <div class="ideate">
+
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+            <h3 class="light">— Phase 3 of 4 —</h3>
+            <h3>Ideate</h3>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" id="information-architect">
+            <p class="method"> Sketch
+            </p>
+          </div>
+          <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+            <p>
+              I re-organized and sketched the existing information architecture based on users' feedback.
+            </p>
+          </div>
+
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <a data-fancybox="gallery" href="images_new/projects/tp-invention-hub/ih-information-architecture.jpg" data-caption="Current Process"><img src="images_new/projects/tp-invention-hub/ih-information-architecture.jpg" alt=""></a> </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- PROCESS: IDEATE ENDS -->
+
+  <!-- PROCESS: PROTOTYPE -->
+  <section class="project-process">
+    <div class="main-container">
+      <div class="row">
+        <div class="prototype">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h3 class="light">— Phase 4 of 4 —</h3>
+            <h3>Prototype & Iterate</h3>
+            <h4>Paper prototype </h4>
+            <p>To make sure the redesign meets users' needs, I built the paper prototype. Then, I tested with five participants who are in either engineering or creative industry and have their own side-projects. The cardboard was created to provide a more
+              smooth testing experience</p>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <a data-fancybox="gallery" href="images_new/projects/tp-invention-hub/ih-paper-proto1.jpg" data-caption="Dashboard page (for new users)"><img src="images_new/projects/tp-invention-hub/ih-paper-proto1.jpg" alt="Dashboard page (for new users)"></a>
+            <p class="caption">Dashboard page (for new users)</p>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <a data-fancybox="gallery" href="images_new/projects/tp-invention-hub/ih-paper-proto2.jpg" data-caption="Idea Description page"><img src="images_new/projects/tp-invention-hub/ih-paper-proto2.jpg" alt="Idea Description page"></a>
+            <p class="caption">Idea Description page</p>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <a data-fancybox="gallery" href="images_new/projects/tp-invention-hub/ih-paper-proto3.jpg" data-caption="Drawing tool page"><img src="images_new/projects/tp-invention-hub/ih-paper-proto3.jpg" alt="Drawing tool page"></a>
+            <p class="caption">Drawing tool page</p>
+          </div>
+          <div class="quote col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h4 class="quote-line">“It's an easy-to-use tool to capture my ideas and discuss them with colleagues and friends.”</h4>
+            <p class="quote-person"> Participant 3, Back-end Engineer</p>
+          </div>
+
+          <div class="space"></div>
+
+          <h4>Hi-fidelity Prototype</h4>
+          <p>After collecting the feedback from the test users, I iterated the design and created the hi-fi prototype which increased the task completion rate by 150%</p>
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <video width="100%" height="auto" controls>
+    <source src="images_new/projects/tp-invention-hub/ih_prototype_v3.mp4" type="video/mp4">
+    </video>
+
+          </div>
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <iframe width="424" height="916" src="//invis.io/HKR2NPNDPX2" frameborder="0" allowfullscreen></iframe> </div>
+        </div>
+      </div>
+  </section>
+  <!-- PROCESS: PROTOTYPE ENDS -->
+
+  <!-- SECTION 01: PROJECT PROCESS ENDS -->
+  <!-- SECTION 02: RESULTS -->
+  <section>
+    <div class="main-container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="results">
+          <h1>02<br> RESULTS</h1>
+          <h4>Key features</h4>
+          <p>Six features were designed for the final prototype to meet users' expectation. The task completion rate increased by <strong>150%</strong>.
+          </p>
+          <img class="key-features" src="images_new/projects/tp-invention-hub/ih-results.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- SECTION 02: RESULTS END -->
+
+  <!-- SECTION 02: REFLECTION -->
+  <section class="project-process">
+    <div class="main-container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 " id="reflection">
+          <h1>03<br> REFLECTION</h1>
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+          </div>
+          <ul class="next-step-list">
+            <li>Focus on one problem per time and think deeper for the solution
+            </li>
+            <li>Conduct usability test with low (zero) budget
+            </li>
+            <li> Present the problems and solutions clearly to stakeholders
+            </li>
+          </ul>
+  </section>
+  <!-- SECTION 03: REFLECTION ENDS-->
+
+  <!-- SECTION: OTHER PROJECTS-->
+  <section>
+    <div class="main-container">
+      <div class="row">
+        <div class="others-headline col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <h2>Other Projects</h2>
         </div>
+
         <div class="others col-lg-6 col-md-6 col-sm-6 col-xs-12">
-          <a href="skcch-site-redesign.html">
-                        <span class="project3-card"></span>
-                        <p>SKCCH Site Redesign</p>
-                    </a>
+          <a href="the-block-project-matchmaking-app.html">
+              <span class="project2-card"></span>
+              <p>The BLACK Project Matchmaking App</p>
+          </a>
         </div>
 
         <div class="others col-lg-6 col-md-6 col-sm-6 col-xs-12">
-          <a href="sportsthink-360-brand-website.html"><span class="project2-card">
-                    </span>
-          <p>Sportsthink-360 Brand Website</p></a>
+          <a href="google-design-challenge.html">
+            <span class="project3-card">
+            </span>
+            <p>Google Design Challenge</p>
+        </a>
         </div>
-
       </div>
     </div>
   </section>
+  <!-- SECTION: OTHER PROJECTS ENDS-->
+
+  <!-- FOOTER -->
   <footer>
     <div class="main-container">
-      <ul class="project-list">
-        <li><a href="the-block-project-matchmaking-app.html">The Block Project Web App &#8226;</a> </li>
-        <li><a href="sportsthink-360-brand-website.html">Sportsthink-360 Brand Website &#8226;</a> </li>
-        <li><a href="skcch-site-redesign.html">SKCCH Site Redesign</a> </li>
-      </ul>
-
       <ul class="contact-list ">
         <li><a href="https://www.linkedin.com/in/chia-ming-jessica-pan-58403986" target="_blank "><i class="fab fa-linkedin fa-2x "></i></a></li>
         <li><a href="https://chiamingpan.github.io/" target="_blank "><i class="fab fa-github fa-2x "></i></a></li>
@@ -333,9 +424,11 @@
 
         </li>
       </ul>
-      <p>Copyright © 2018 Jessica Pan. All rights reserved.</p>
+      <p>Copyright © 2019 Jessica Pan. All rights reserved.</p>
     </div>
   </footer>
+  <!-- FOOTER END -->
+
   <!--
 <script src="js/script.js ">
 </script>
@@ -346,6 +439,8 @@
       $(this).toggleClass('open');
     })
   </script>
+
 </body>
+<!-- BODY ENDS -->
 
 </html>
