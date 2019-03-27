@@ -42,6 +42,9 @@ ul.flex-container{
     margin: 1em;
 }
 
+.text-box{
+  padding:0 15%;
+}
 /* NOTE COMPONENTS*/
 
 button {
@@ -57,9 +60,7 @@ img{
 iframe{
   margin: 10px auto;
 }
-.quote{
-  margin: 30px 0;
-}
+
 .quote-line{
   font-style: italic;
   font-weight: bold;
@@ -74,17 +75,18 @@ iframe{
 }
 
 .quote{
-  border-left: 2px solid grey;
-  padding-left: 10px;
+  margin: 30px auto;
+  border-left: 2px solid #c1c1c1;
 }
 .space{
   height: 20px;
   width: 100%;
 }
 
-.center-col{
+.center-col, .proto-demo{
 text-align:center;
 }
+
 
 section.work img, img.feature-image{
   margin: 0px auto;
@@ -214,7 +216,7 @@ position:relative;
 }
 
 #project-page .main-container{
-    padding: 35px 10%;
+    padding: 35px 5%;
 }
 #topnav.main-container{
   padding: 0px 5%;
@@ -228,19 +230,28 @@ position:relative;
     padding: 0 5%;
 }
 
+.navbar-fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+}
 
+.navbar-fixed-top.scrolled .nav-link {
+  color:#555;
+}
 #front-page header{
   color: #A8B1B0;
   position:relative;
   padding: 0;
   z-index: 50;
+
 }
 #project-page header{
     /* background-color: #FFFFFF; */
     color: #A8B1B0;
-    position:relative;
+    /* position:relative; */
     padding: 0;
     z-index: 50;
+    height: 50px;
     /* border-bottom: 1px solid #F5F6F5; */
 }
 
@@ -748,7 +759,7 @@ h1.project-title{
 }
 #overview{
   clear:both;
-  margin-top:400px;
+  padding-top:460px;
 
 }
 .sub-project-heading{
@@ -794,8 +805,7 @@ ul.process-list{
 }
 p.method{
   text-align:left;
-  font-weight:700;
-
+  /* font-weight:700; */
 }
 
 /* Process */
@@ -893,7 +903,7 @@ a.external-link{
 }
 
 #key-highlight ul>li{
-  padding-left: 30px;
+  padding-left: 10px;
   color:rgba(0,0,0,.6);
   font-size: 1em; /* 16px */
   line-height: 1.6em;
@@ -964,7 +974,7 @@ ul.process-list,
 ul.ideation-list,
 ul.next-step-list,
 ol.process-list {
-  padding-left: 25px;
+  padding-left: 40px;
   font-size: 1.2em;
   line-height: 1.8em;
   letter-spacing:.05em;
@@ -1244,7 +1254,7 @@ button.readCase{
 }
 
 
-.hovereffect a, .hovereffect p {
+/* .hovereffect a,*/.hovereffect p {
   color: #FFF;
   opacity: 0;
   filter: alpha(opacity=0);
@@ -1257,7 +1267,7 @@ button.readCase{
 }
 
 
-.hovereffect:hover a, .hovereffect:hover p {
+/* .hovereffect a,*/ .hovereffect:hover p {
   opacity: 1;
   filter: alpha(opacity=100);
   -webkit-transform: translate3d(0,0,0);
@@ -1276,12 +1286,11 @@ button.readCase{
 
 .sideMenu{
   position:fixed;
-  top:240px;
+  top:220px;
   right:40px;
   z-index:0;
   font-size:16px;
   text-align:left;
-
 }
 
 #sidemenu .nav>li>a{
@@ -1291,15 +1300,16 @@ button.readCase{
     color: #A8B1B0;
 }
 
-#sidemenu ul>li:active a, #sidemenu ul>li:focus a {
-  background-color: #00bcd4;
+#sidemenu ul>li.active a.nav-link {
+  color: #00bcd4;
 }
+
 #sidemenu .nav>li>a:hover{
   color:#424242;
 }
-/* .nav>li>a:active, .sideMenu a:visited{
+.nav>li>a:active, .sideMenu a:visited{
   color: #00bcd4;
-} */
+}
 
 
 li.sideMenu_item:active,li.sideMenu_item:hover{
