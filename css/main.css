@@ -1315,3 +1315,13 @@ button.readCase{
 li.sideMenu_item:active,li.sideMenu_item:hover{
   background-color:transparent;
 }
+
+/* Mobile L Device*/
+@media (max-width:680px){
+  .sideMenu{
+  display: none;
+  }
+  .text-box{
+    padding:0 5%
+  }
+}
