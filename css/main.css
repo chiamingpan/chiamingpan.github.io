@@ -246,13 +246,10 @@ position:relative;
 
 }
 #project-page header{
-    /* background-color: #FFFFFF; */
     color: #A8B1B0;
-    /* position:relative; */
     padding: 0;
     z-index: 50;
     height: 50px;
-    /* border-bottom: 1px solid #F5F6F5; */
 }
 
 p.logo{
@@ -305,13 +302,9 @@ p.logo{
   height: 0;
   overflow: hidden;
   text-align: center;
-  background-color: #F5F6F5;
+  background-color: #FFFFFF;
 }
 
-#project-page .site-nav{
-    /* background-color: #FFFFFF; */
-    border-bottom: 1px solid #A8B1B0;
-}
 
 
 .nav-contact-list{
@@ -347,9 +340,7 @@ p.logo{
   letter-spacing: .1em;
 }
 
-#project-page .site-nav a{
-  color: #F2F2F2;
-}
+
 .site-nav a:hover,
 .site-nav a:focus {
   color: #;
@@ -358,39 +349,47 @@ p.logo{
 .menu-toggle {
   padding: 0 1em;
   position: absolute;
-  top: 3.2em;
   right: 1em;
   cursor: pointer;
+  top: 1.6em;
 }
-
 .menu-toggle p {
   position: absolute;
   right:3em;
-  top: -1.35em;
+  top: -1.25em;
   font-weight: 700;
+  color: #C1C1C1;
 }
 
-#project-page .menu-toggle{
-  top: 1.6em;
+#project-page .menu-toggle p {
+  color: #F2F2F2;
 }
+
+
 
 .hamburger, .hamburger::before, .hamburger::after {
   content: '';
   display: block;
-  background: #A8B1B0;
+  background: #C1C1C1;
   height: 3px;
   width: 1.75em;
   border-radius: 3px;
   transition: all ease-in-out 500ms;
 }
-
 .hamburger::before {
   transform: translateY(-6px);
+    background: #C1C1C1;
 }
-
 .hamburger::after {
   transform: translateY(3px);
+    background: #C1C1C1;
 }
+
+#project-page .hamburger, #project-page .hamburger::before, #project-page .hamburger::after {
+background: #F2F2F2;
+}
+
+
 .open .hamburger {
   transform: rotate(45deg);
 }
@@ -441,6 +440,7 @@ p.logo{
   .menu-toggle {
     display: none;
   }
+
   .site-nav {
     height: auto;
     position: relative;
@@ -458,6 +458,10 @@ p.logo{
   .nav-contact-list{
     display: none;
   }
+  #project-page .site-nav a{
+    color: #F2F2F2;
+  }
+
   #project-page .site-nav{
     border-bottom: none;
   }
@@ -640,37 +644,6 @@ span i.fas.fa-chevron-right{
 
 }
 
-#project0 .project-preview {
-  /* background-color: #e58d6d; */
-  background-image: url(../images/ih-feature-img-lg.png);
-  background-size: cover;
-  margin: 0 auto;
-}
-
-#project1 .project-preview {
-  /* background-color: #e58d6d; */
-  background-image: url(../images/fh-feature-img-sm.png);
-  background-size: cover;
-  margin: 0 auto;
-}
-
-#project2 .project-preview {
-  /* background-color: #79b2d6; */
-  background-image: url(../images/st360-feature-img-sm.png);
-  background-size: cover;
-}
-
-#project3 .project-preview {
-  /* background-color: #9fa5a7; */
-  background-image: url(../images/skcch-feature-img-lg.png);
-  background-size: cover;
-}
-
-#project4 .project-preview{
-  /* background-color: #9fa5a7; */
-  background-image: url(../images/ddl-feature-img-sm.png);
-  background-size: cover;
-}
 
 
 
@@ -849,6 +822,7 @@ p.method{
   width: 80%;
   margin: 0 auto;
 }
+
 .feature-image{
   background-size: cover;
   height:auto;
@@ -859,38 +833,23 @@ p.method{
   left:0;
   z-index: 10;
 }
+/* Tablet Device*/
+
+@media (max-width:1240px){
+  .feature-image{
+    height:480px;
+    width:auto;
+  }
+}
+@media (max-width:640px){
+    #ih-feature-imge.feature-image {
+      background-image: url(../images_new/projects/google-design-challenge/feature-img-google-mobile.png);
+    }
+}
 .key-features{
   background-size: cover;
   width:100%;
 }
-#ih-banner{
-  background-image: url(../images_new/projects/tp-invention-hub/ih-feature-img-lg.png);
-  background-size: cover;
-  height:360px;
-  /* position:absolute;
-  background-repeat: no-repeat;
-  top:0;
-  left:0;
-  z-index: 1000; */
-}
-#fh-banner {
-  background-image: url(../images/fh-feature-img-lg.png);
-  background-size: cover;
-  height:450px;
-}
-
-#sportsthink-banner {
-  background-image: url(../images/st360-feature-img-md.png);
-  background-size: cover;
-  height:450px;
-}
-
-#skcch-banner {
-  background-image: url(../images/banner-skcch.png);
-  background-size: cover;
-  margin: 0 auto;
-}
-
 
 .project-process {
   margin-top: 20px;
@@ -1157,23 +1116,7 @@ section#about-page .main-container {
     display:none;
   }
 
-  #project0 .project-preview {
-    background-color: #e58d6d;
-    background-image: url(../images/ih-feature-img-lg.png);
-    background-size: cover;
-    margin: 0 auto;
-  }
-#project1 .project-preview {
-  background-color: #e58d6d;
-  background-image: url(../images/fh-feature-img-md.png);
-  background-size: cover;
-  margin: 0 auto;
-}
-#project2 .project-preview {
-  background-color: #79b2d6;
-  background-image: url(../images/st360-feature-img-md.png);
-  background-size: cover;
-}
+
 button.readCase{
   bottom:40px;}
 
