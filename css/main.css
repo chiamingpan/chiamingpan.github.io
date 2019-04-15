@@ -764,6 +764,25 @@ h1.project-title{
   padding-top:480px;
 
 }
+
+/*Project Page media query*/
+@media (min-width:1580px){
+  #overview{
+    padding-top: 480px;
+  }
+}
+@media (min-width:1620px){
+  #overview{
+    padding-top: 520px;
+  }
+}
+@media (min-width:1680px){
+  #overview{
+    padding-top: 580px;
+  }
+}
+
+
 .sub-project-heading{
   font-family:"Helvetica Neue";
 }
