@@ -91,6 +91,11 @@ text-align:center;
 section.work img, img.feature-image{
   margin: 0px auto;
 }
+
+img.feature-image{
+  height:480px;
+  width:auto;
+}
 /* NOTE TYPOGRAPHY */
 h1, h3{
   margin:20px 0;
@@ -854,17 +859,62 @@ p.method{
 }
 /* Tablet Device*/
 
-@media (max-width:1240px){
-  .feature-image{
-    height:480px;
-    width:auto;
+
+#tbp-feature-img.feature-image{
+  background-image: url(../images_new/projects/tbp-matching-app/feature-img-tbp-v2.png);
+  width: 100%;
+}
+
+@media (max-width:1064px){
+  #tbp-feature-img.feature-image {
+    background-image: url(../images_new/projects/tbp-matching-app/feature-img-tbp-tablet.png);
+    width: 100%;
   }
 }
 @media (max-width:640px){
-    #ih-feature-imge.feature-image {
-      background-image: url(../images_new/projects/google-design-challenge/feature-img-google-mobile.png);
-    }
+  #tbp-feature-img.feature-image {
+    background-image: url(../images_new/projects/tbp-matching-app/feature-img-tbp-mobile.png);
+    width: 100%;
+  }
 }
+
+#ih-feature-img.feature-image{
+  background-image: url(../images_new/projects/tp-invention-hub/feature-img-ih.png);
+  width: 100%;
+  border-color: transparent;
+}
+
+@media (max-width:1064px){
+  #ih-feature-img.feature-image {
+    background-image: url(../images_new/projects/tp-invention-hub/feature-img-ih-tablet.png);
+    width: 100%;
+  }
+}
+@media (max-width:640px){
+  #ih-feature-img.feature-image {
+    background-image: url(../images_new/projects/tp-invention-hub/feature-img-ih-mobile.png);
+    width: 100%;
+  }
+}
+
+#google-feature-img.feature-image{
+  background-image: url(../images_new/projects/google-design-challenge/feature-img-google.png);
+  width: 100%;
+}
+
+@media (max-width:1064px){
+  #google-feature-img.feature-image {
+    background-image: url(../images_new/projects/google-design-challenge/feature-img-google-tablet.png);
+    width: 100%;
+  }
+}
+@media (max-width:640px){
+  #google-feature-img.feature-image {
+    background-image: url(../images_new/projects/google-design-challenge/feature-img-google-mobile.png);
+    width: 100%;
+  }
+}
+
 .key-features{
   background-size: cover;
   width:100%;
