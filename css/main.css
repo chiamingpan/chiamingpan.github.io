@@ -185,7 +185,6 @@ p.caption{
   letter-spacing: .02em;
   margin: 5px 0 0 0;
   text-align: center;
-  font-style: italic;
 }
 
 a{
@@ -950,9 +949,13 @@ h5.duration {
   color: #2AA8A1;
 }
 
-a.external-link{
+a.external-link {
   text-decoration:underline;
   color:#00bcd4;
+}
+
+a.internal-link {
+  color:#000000;
 }
 
 #key-highlight ul>li{
