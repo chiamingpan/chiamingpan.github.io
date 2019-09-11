@@ -62,7 +62,7 @@ iframe{
 }
 
 .quote-line{
-  font-style: italic;
+  /* font-style: italic; */
   font-weight: bold;
   color: grey;
   padding-left: 20px;
@@ -185,6 +185,13 @@ p.caption{
   letter-spacing: .02em;
   margin: 5px 0 0 0;
   text-align: center;
+}
+p.caption-left{
+  font-size: 1em; /* 16px */
+  line-height: 1.4em;
+  letter-spacing: .02em;
+  margin: 5px 0 0 0;
+  text-align: left;
 }
 
 a{
@@ -509,16 +516,31 @@ background: #F2F2F2;
 .masterhead{
   clear:both;
 }
+
 .masterhead .main-container{
   padding: 60px 5% 40px 5%;
   text-align: center;
 }
 
 .sub-head h1, .sub-head h4{
-font-family: 'Raleway', sans-serif;
-/* font-family: "Helvetica Neue"; */
-padding-bottom: 0;
-
+  font-family: 'Raleway', sans-serif;
+  /* font-family: "Helvetica Neue"; */
+  padding-bottom: 0;
+  text-align: center;
+}
+.sub-head h1{
+  font-size: 2.8em;
+}
+.sub-head h4{
+  width:100%;
+  margin:auto;
+}
+/*Subhead media query*/
+@media (min-width:1080px){
+  .sub-head h4{
+    width:60%;
+    margin:auto;
+  }
 }
 
 .row {
@@ -557,6 +579,7 @@ ul.contact-list-grey li a:hover {
 section.work {
   background-color: #fff;
 }
+
 .project-process h3{
   color:rgba(0,0,0,.6);
   margin-bottom: 30px;
@@ -570,10 +593,12 @@ section.work {
   margin-bottom: 0;
   color: grey;
 }
-
+p.project-title{
+  font-weight: bold;
+}
 p.project-title, p.project-goal{
   font-family:  "Helvetica Neue";
-  font-size:1em;
+  font-size:1.1em;
   margin-bottom: 0;
   color:#424242;
 }
@@ -581,7 +606,7 @@ p.project-title, p.project-goal{
 p.project-goal{
   margin-top:5px;
   margin-bottom: 0;
-  font-size:.9em;
+  font-size:1em;
 
 }
 .project-preview, .project-brief {
@@ -692,7 +717,7 @@ footer {
   color: #424242;
 }
 footer .main-container{
-  padding-top: 40px;
+  padding-top: 15px;
   padding-bottom: 5px;
 }
 footer p{
@@ -1019,7 +1044,7 @@ p {
   background-size: cover;
 }
 .project3-card {
-  background-image: url(../images_new/projects/google-design-challenge/thumbnail-img-google.png);
+  background-image: url(../images_new/projects/google-design-challenge/thumbnail-img-google-1440-988.png);
   background-size: cover;
   background-color: #9fa5a7;
 }
@@ -1068,9 +1093,6 @@ img.solution-img{
   padding-left: 10px;
 }
 
-.project-process h3{
-  color:#DC7849;
-}
 /*About Page*/
 
 .profile-img{

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="icon" href="images_new/logo-fav.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="renderer" content="webkit">
+  <title>Jessica Pan | UX Researcher/Designer</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121207387-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-121207387-1');
+  </script>
+
+  <!-- stylying -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/basic.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
+
+  <!-- js or jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#sidemenu a, #jumpToSolution').click(function(event) {
+        event.preventDefault();
+        var link = this;
+        $.smoothScroll({
+          scrollTarget: link.hash
+        });
+      });
+
+      $("[data-menu-burger]").click(function() {
+        $("html").toggleClass("menu-burger__html-overlay");
+      });
+
+      $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+      });
+    });
+  </script>
+</head>
+
+<body id="front-page">
+  <!-- masterhead section -->
+  <header>
+    <div class="main-container" id="topnav">
+      <p class="logo"> <a href="index.html"><strong>Jessica</strong> Pan</a></p>
+      <nav class="site-nav">
+        <ul>
+          <li class="active">
+            <a href="index.html">
+            <i class="far fa-lightbulb fa-2x  site-nav--icon">
+            </i> Work
+          </a>
+          </li>
+          <li>
+            <a href="about.html">
+              <i class="far fa-user fa-2x site-nav--icon">
+            </i>About
+            </a>
+          </li>
+          <li>
+            <a href="Jessica Pan_Resume_UX Designer_0729.pdf" target="_blank ">
+              <i class="far fa-file-alt fa-2x site-nav--icon">
+            </i>Resume
+            </a>
+          </li>
+          <li>
+            <ul class="nav-contact-list">
+              <li><a href="https://www.linkedin.com/in/jessica-pan-58403986" target="_blank "><i class="fab fa-linkedin fa-2x "></i></a></li>
+              <li><a href="https://chiamingpan.github.io/" target="_blank "><i class="fab fa-github fa-2x "></i></a></li>
+              <li><a href="mailto:jessicapan1224@gmail.com " target="_top "><i class="far fa-envelope fa-2x "></i></a>
+            </ul>
+            </li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">
+        <p>MENU</p>
+        <div class="hamburger"></div>
+      </div>
+    </div>
+  </header>
+  <section class="masterhead">
+    <div class="main-container">
+      <div class="row">
+        <div class="sub-head col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <h1>Mix Empathetic <span class="highlighted-text">Design</span> And Business <span class="highlighted-text">Strategy</span>
+            <br>Max The Enjoyment Of <span class="highlighted-text">User Experience</span>
+          </h1>
+          <h4> User Experience Researcher / Designer 📍 Seattle, WA </h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- work section -->
+  <section class="work">
+    <div class="main-container" id="project0">
+      <div class="row">
+
+        <!-- The Block Project -->
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="hovereffect">
+            <a href="the-block-project-app.html">
+            <img class="img-responsive" src="images_new/projects/tbp-matching-app/thumbnail-img-tbp.png" alt="">
+              <div class="overlay">
+                <p>
+                  Explore Project
+                </p>
+          </div>
+          </a>
+          </div>
+          <p class="project-title">The BLOCK Project Matchmaking App</p>
+          <p class="project-goal">Homelessness issue? Having your community to be part of the solution</p>
+
+        </div>
+
+        <!-- Invention Hub -->
+
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="hovereffect">
+            <a href="turbopatent-invention-hub.html">
+              <img class="img-responsive" src="images_new/projects/tp-invention-hub/thumbnail-img-ih.png" alt="">
+              <div class="overlay">
+                <p>
+                Explore Project
+                </p>
+              </div>
+            </a>
+          </div>
+          <p class="project-title">TurboPatent Invention Hub</p>
+          <p class="project-goal">The future of idea capturing for inventors</p>
+        </div>
+
+
+        <!-- Google Design Challenge -->
+
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="hovereffect">
+            <a href="google-design-challenge.html">
+              <img class="img-responsive" src="images_new/projects/google-design-challenge/thumbnail-img-google.png" alt="">
+              <div class="overlay">
+                <p>
+                Explore Project
+                </p>
+              </div>
+            </a>
+          </div>
+          <p class="project-title">Google Design Challenge</p>
+          <p class="project-goal"> New Google Calendar that helps color your life based on your style </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="main-container">
+        <ul class="contact-list">
+          <li><a href="https://www.linkedin.com/in/jessica-pan-58403986/" target="_blank "><i class="fab fa-linkedin fa-2x "></i></a></li>
+          <li><a href="https://chiamingpan.github.io/" target="_blank "><i class="fab fa-github fa-2x "></i></a></li>
+          <li><a href="mailto:jessicapan1224@gmail.com " target="_top "><i class="far fa-envelope fa-2x "></i></a>
+
+          </li>
+        </ul>
+        <p>Copyright © 2019 Jessica Pan. All rights reserved.</p>
+      </div>
+    </footer>
+    <script>
+      $('.menu-toggle').click(function() {
+        $('.site-nav').toggleClass('site-nav--open', 500);
+        $(this).toggleClass('open');
+      })
+    </script>
+</body>
+
+</html>
