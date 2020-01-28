@@ -921,6 +921,25 @@ p.method{
   }
 }
 
+#ih-ob-feature-img.feature-image{
+  background-image: url(../images_new/projects/tp-invention-hub-onboarding/feature-img-ih.png);
+  width: 100%;
+  border-color: transparent;
+}
+
+@media (max-width:1064px){
+  #ih-ob-feature-img.feature-image {
+    background-image: url(../images_new/projects/tp-invention-hub-onboarding/feature-img-ih-tablet.png);
+    width: 100%;
+  }
+}
+@media (max-width:640px){
+  #ih-ob-feature-img.feature-image {
+    background-image: url(../images_new/projects/tp-invention-hub-onboarding/feature-img-ih-mobile.png);
+    width: 100%;
+  }
+}
+
 #google-feature-img.feature-image{
   background-image: url(../images_new/projects/google-design-challenge/feature-img-google.png);
   width: 100%;
